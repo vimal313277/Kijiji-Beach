@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hotel Management</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta property="og:image" content="https://1.bp.blogspot.com/-_ucrYk08rDo/UhM-FPY7XHI/AAAAAAAALhM/9DQF77Ct_Cg/s1600/kijijijijijjijiji.jpg">
+    <link rel='stylesheet' type='text/css' media='screen' href='responsive.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='slick.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='slick-theme.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src='slick.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.all-places').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+
+            });
+        });
+
+        $(document).ready(function () {
+            $(".fa-bars").click(function () {
+                $(".jq").slideToggle(600);
+            });
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ============ header start ========== -->
+
+    <header>
+
+        <div class="main-head">
+            <div class="logos">Hotel Management</div>
+            <i class="fa fa-bars"></i>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contect.html">Contact Us</a></li>
+                <div class="book"><a href="#">Booking Now</a></div>
+            </ul>
+        </div>
+        <div class="jq">
+        <ul class="nav-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contect.html">Contact Us</a></li>
+            <!-- <div class="book"><a href="#">Booking Now</a></div> -->
+        </ul>
+    </div>
+
+    </header>
+
+    <!-- ============ header End ========== -->
+
+    <!-- ========== hiro secton start ==========  -->
+
+    <section id="hiro">
+        <div class="hiro-bg">
+            <div class="hiro-cntent">
+                <h4 class="head-4">WELCOME TO</h4>
+                <h1 class="head-1">KIJIJI <br> BEACH</h1>
+                <p class="cnct-p">Book your stay and enjoy Luxury <br> redefined at the most affordable rates.</p>
+                <p class="cnct-p-respo">Book your stay and enjoy Luxury redefined at the most affordable rates.</p>
+                <div class="book-2">BOOK NOW</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== hiro secton End ==========  -->
+
+    <!-- ========== componate start ==========  -->
+
+    <section id="componate">
+
+        <div class="main-componate">
+            <div class="sec-main">
+
+                <img src="Component 1.png" class="componate-img">
+
+                <div class="componate-cnct">
+
+                    <h3 class="cmpnt-head-3">Welcome To Our <br> Kijiji Beach</h3>
+
+                    <p class="componate-pera">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Tellus in
+                        enim in in <br> sagittis tristique cursus nam in. Mauris, <br> elementum lacus in enim. Sapien,
+                        <br> massa orci fames tellus in quis vel. <br> Ornare cursus sit lobortis in nullam <br> magnis
+                        tincidunt amet quis.
+                    </p>
+
+                    <div class="book-3"><a href="#">Book Now</a></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========== componate End ==========  -->
+
+    <!-- ========== best place Start ==========  -->
+
+    <section id="the-best-place">
+
+        <div class="main-place">
+            <div class="place-cnct">
+                <h4 class="place-1">Choose The Best Place For Your Vacation</h4>
+                <p class="place-2">We have prepared several hotels, villas and apartments to enjoy your vacation with
+                    your family.</p>
+            </div>
+
+            <div class="all-places">
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Single</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Family</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Couple</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Residential</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Couple</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Residential</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Couple</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+                <div class="place-slider">
+                    <img src="Mask Group.png" class="Group-1">
+                    <div class="place-cnct-all">
+                        <div class="place-cnct-1">Kijiji Beach Residential</div>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>(4,9)
+                        </div>
+                        <div class="book-4">$300/day</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========== best place End ==========  -->
+
+    <!-- /* =========== customer said start ===========  */ -->
+
+    <section id="customer-said">
+
+        <div class="mian-c-said">
+            <h2 class="c-one">Our Customer Said</h2>
+
+            <div class="c-flx">
+
+                <div class="c-said-1">
+                    <div class="nav-1">
+                        <div class="cercle"></div>
+                        <div class="c-name">Titus Wealth
+                            <div class="c-reviw">Dar es salaam , Tanzania</div>
+                        </div>
+                        <i class="fa fa-star">4.8</i>
+                    </div>
+                    <p class="c-r-cnct">“it was so good and wonderfull ilike this place so much “</p>
+                </div>
+
+                <div class="c-said-1">
+                    <div class="nav-1">
+                        <div class="cercle"></div>
+                        <div class="c-name">Dastani Ferdinandi
+                            <div class="c-reviw">Nairobi, Kenya </div>
+                        </div>
+                        <i class="fa fa-star">4.3</i>
+                    </div>
+                    <p class="c-r-cnct">“very exclusive service. really a very comfortable hotel the mattress is very
+                        soft like the rendang meat that I met yesterday“</p>
+                </div>
+
+                <div class="c-said-1">
+                    <div class="nav-1">
+                        <div class="cercle"></div>
+                        <div class="c-name">Gilbert Robert
+                            <div class="c-reviw">Dar es Salaam , Tanzania</div>
+                        </div>
+                        <i class="fa fa-star">4.5</i>
+                    </div>
+                    <p class="c-r-cnct">“Good rooms and services ill visit every weekend to enjoy with my family”</p>
+                </div>
+
+            </div>
+            <div class="c-more">View all reviews</div>
+        </div>
+
+    </section>
+
+    <!-- /* =========== customer said End ===========  */ -->
+
+    <!-- ========== bg-cnct start =========== -->
+
+    <section id="bg-cnct">
+
+        <div class="bg-e-cnct">
+            <h1 class="book-cnct">Do you want to rent out the hotel?</h1>
+            <p class="book-p">We prepare the best choice of places with high quality that is guaranteed by the hotel
+                assessment agency.</p>
+            <div class="book-btn-1"><a href="#">Book now <i class="fa fa-arrow-right"></i> </a></div>
+        </div>
+    </section>
+
+    <!-- ========== bg-cnct End =========== -->
+
+    <!-- ========== Footer Start ==========  -->
+
+    <footer>
+
+        <div class="main-ftr">
+            <hr class="ftr-line">
+            <div class="ftr-cnct">
+
+                <ul class="ftr-logos">Kijiji Beach
+                    <li>Southeast Asia’s travel unicorn start-up, Traveloka, is a leading travel and lifestyle booking
+                        platform.</li>
+                </ul>
+
+                <div class="sec-ul-flx">
+
+                    <ul class="links">Links
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+
+                    <ul class="abt">About
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Community</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="end-ftr">
+                <p class="ptrn-c">© 2022 Kijiji Beach All rights reserved.</p>
+                <div class="social-flx">
+                    <div class="f-b"><i class="fa fa-facebook"></i></div>
+                    <div class="f-b"><i class="fa fa-instagram"></i></div>
+                    <div class="f-b"><i class="fa fa-twitter"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- ========== Footer End ==========  -->
+</body>
+
+</html>

@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;500&family=Teko:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== header css start ==========  */
+
+.main-head {
+    width: 100%;
+    height: auto;
+    background-color: #F4694C;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.book a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 10px;
+    background: 
+    linear-gradient(#ffffff 0 0) no-repeat
+    calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + .08em);
+  transition: .3s calc(var(--i, 0) * .3s), background-position .3s calc(.3s - calc(var(--i, 0) * .3s));
+}
+.book a:hover {
+    --i: 1;
+    color: #F4694C;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    --c: no-repeat linear-gradient(#ffffff 0 0);
+  background: 
+    var(--c) calc(-100% + var(--p, 0%)) 100% / 50% var(--p, .08em),
+    var(--c) calc( 200% - var(--p, 0%)) 0    / 50% var(--p, .08em);
+  transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+
+}
+.nav li a:hover {
+    --p: 100%;
+  --t: 0.3s;
+  color: #F4694C;
+}
+
+.logos {
+    display: none;
+}
+.fa-bars {
+    display: none !important;
+}
+.nav-2 {
+    display: none !important;
+}
+
+.jq {
+    display: none;
+}
+
+/* ========== header css End ==========  */
+
+
+/* <!-- ========== hiro secton start ==========  --> */
+
+.hiro-bg {
+    width: 100%;
+    height: 742px;
+    background: url(hiro.png);
+    background-size: cover;
+    position: relative;
+}
+
+.hiro-bg::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 742px;
+    background: #14274a7d;
+}
+
+.hiro-cntent {
+    width: 50%;
+    height: 600px;
+    /* background: red; */
+    position: absolute;
+    z-index: 1;
+    padding: 6%;
+    margin-left: 1%;
+}
+
+.head-4 {
+    width: fit-content;
+    color: #FFFFFF;
+    font-family: system-ui;
+    font-size: 22px;
+    letter-spacing: 2px;
+    cursor: context-menu;
+}
+
+.head-1 {
+    width: fit-content;
+    color: #FFFFFF;
+    font-size: 160px;
+    font-family: math;
+    letter-spacing: 4px;
+    cursor: context-menu;
+}
+
+.cnct-p {
+    width: fit-content;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    cursor: context-menu;
+}
+.cnct-p-respo {
+    display: none;
+}
+
+.book-2 {
+    width: 20%;
+    background-color: #F4694C;
+    color: #FFFFFF;
+    margin-top: 5%;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: monospace;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 600;
+    cursor: context-menu;
+}
+
+
+/* <!-- ========== hiro secton End ==========  --> */
+
+/* <!-- ========== componate start ==========  --> */
+
+.main-componate {
+    width: 100%;
+    height: 690px;
+    display: flex;
+    /* background: wheat; */
+}
+
+.sec-main {
+    width: 100%;
+    height: auto;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 2%;
+}
+
+.componate-img {
+    width: 40%;
+}
+
+.componate-cnct {
+    /* background-color: red; */
+}
+
+.cmpnt-head-3 {
+    color: #000000;
+    font-size: 35px;
+    font-family: sans-serif;
+    width: fit-content;
+    line-height: 50px;
+}
+
+.componate-pera {
+    color: #000000;
+    margin-top: 2%;
+}
+
+.book-3 {
+    background-color: #F4694C;
+    margin-top: 12%;
+    width: 105px;
+    height: 38px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.book-3 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: math;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* <!-- ========== componate End ==========  --> */
+
+/* <!-- ========== best place start ==========  --> */
+
+.main-place {
+    width: 90%;
+    height: 570px;
+    /* background: antiquewhite; */
+    margin: auto;
+}
+
+.place-cnct {
+    /* background: aqua; */
+}
+
+.place-1 {
+    /* background: red; */
+    width: fit-content;
+    margin: auto;
+    font-size: 25px;
+    font-family: math;
+    color: #323232;
+    line-height: 2;
+}
+
+.place-2 {
+    /* background: blueviolet; */
+    width: 23%;
+    text-align: center;
+    margin: auto;
+    font-family: system-ui;
+    font-size: 13px;
+}
+
+.all-places {
+    width: 90%;
+    height: auto;
+    /* background: yellowgreen; */
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.place-slider {
+    width: 20%;
+    height: auto;
+    /* background: #544941; */
+}
+
+.Group-1 {
+    width: 100%;
+}
+
+.place-cnct-1 {
+    width: fit-content;
+    margin-top: 6px;
+}
+
+.rating {
+    width: fit-content;
+    margin-top: 6px;
+    color: #d2c9c9;
+}
+
+.book-4 {
+    width: fit-content;
+    background-color: #F4694C;
+    padding: 3%;
+    color: white;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.place-cnct-all {
+    background: #f5f5f591;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -4px;
+}
+
+.fa-star {
+    color: #F68209;
+}
+
+/* <!-- ========== best place End ==========  --> */
+
+/* =========== customer said start ===========  */
+
+.mian-c-said {
+    width: 90%;
+    height: 418px;
+    background-color: white;
+    margin: auto;
+    padding: 1%;
+}
+
+.c-one {
+    /* background: aqua; */
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    font-family: math;
+    font-weight: 600;
+    margin-top: 2%;
+    cursor: context-menu;
+}
+
+.c-flx {
+    width: 85%;
+    height: auto;
+    /* background: violet; */
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.c-said-1 {
+    background: #f5f5f591;
+    width: 31%;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.nav-1 {
+    /* background: blanchedalmond; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 3%;
+}
+
+.cercle {
+    width: 50px;
+    height: 50px;
+    background: #C4C4C4;
+    border-radius: 25px;
+}
+
+.c-name {
+    width: 65%;
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.c-reviw {
+    color: #999999;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.c-r-cnct {
+    /* background: red; */
+    padding: 9px;
+    margin-top: 22px;
+    color: #999999;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.c-more {
+    /* background: green; */
+    width: fit-content;
+    margin: auto;
+    margin-top: 3%;
+    color: #F4694C;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: context-menu;
+}
+/* =========== customer said End ===========  */
+
+/* <!-- ========== bg-cnct start =========== --> */
+
+.bg-e-cnct {
+    background: url(rent\ hotel_.png);
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    background-size: 100% 100%;
+}
+.book-cnct {
+    color: #FFFFFF;
+    font-size: 36px;
+    width: fit-content;
+    font-family: ui-monospace;
+    /* background: red; */
+    padding-top: 5%;
+    margin-left: 9%;
+    letter-spacing: 0.3px;
+}
+.book-p {
+    width: 30%;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    /* background: red; */
+    margin-left: 9%;
+    margin-top: 2%;
+    line-height: 30px;
+    margin-bottom: 3%;
+}
+.book-btn-1 {
+    background: black;
+    width: 8%;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 12%;
+    text-align: center;
+    line-height: 38px;
+
+}
+.book-btn-1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 14px;;
+}
+.fa-arrow-right {
+    font-size: 12px !important;   
+}
+/* <!-- ========== bg-cnct End =========== --> */
+
+/* <!-- ========== Footer Start ==========  --> */
+
+.main-ftr {
+    width: 100%;
+    height: 290px;
+    /* background-color: yellowgreen; */
+    margin-top: 2%;
+}
+.ftr-line {
+    background: #D8D8D8;
+    color: #D8D8D8;
+    width: 90%;
+    margin: auto;
+    height: 2px;
+}
+.ftr-cnct {
+    width: 60%;
+    height: 240px;
+    /* background: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ftr-logos {
+    /* background: red; */
+    width: 26%;
+    height: 160px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-left: 20%;
+}
+.ftr-logos li {
+    list-style: none;
+    margin-top: 3%;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #626262;
+}
+.links {
+    /* background: green; */
+    width: fit-content;
+    height: fit-content;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.links li {
+    list-style: none;
+    transition: 0.4s;
+}
+.links li:hover {
+    transform: scale(1.2);
+}
+
+.links li a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 15px;
+    color: #646464;
+}
+
+.abt {
+    /* background: wheat; */
+    width: fit-content;
+    height: fit-content;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.abt li {
+    list-style: none;
+    transition: 0.4s;
+}
+.abt li:hover {
+    transform: scale(1.2);
+}
+.abt li a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 15px;
+    color: #646464;
+}
+.end-ftr {
+    width: 100%;
+    height: 48px;
+    background: #F4694C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60%;
+}
+
+.sec-ul-flx {
+    display: flex;
+    gap: 95px;
+}
+
+.ptrn-c {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.f-b {
+    background: #FFFFFF;
+    width: 24px;
+    height: 24px;
+    color: #F4694C;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 24px;
+}
+.social-flx {
+    display: flex;
+    justify-content: space-between;
+    /* background: green; */
+    width: 8%;
+    height: fit-content;
+}
+/* <!-- ========== Footer End ==========  --> */
+
+
+/* <==================================> rooms start <==================================>*/
+.rooms-bg {
+    width: 100%;
+    height: 575px;
+    /* background: pink; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.r-i-1 {    
+    width: 60%;
+    height: 575px;
+    background: url(rooms-1.png);
+    background-size: 100% 100%;
+}
+.r-i-2 {
+    background-color: #323232;
+    color: #FFFFFF;
+    width: 37%;
+    height: auto;
+    margin-left: -4%;
+    font-size: 56px;
+    text-align: center;
+    padding: 60px;
+    font-weight: 600;
+} 
+
+.main-sec-place {
+    width: 90%;
+    height: auto;
+    /* background: antiquewhite; */
+    margin: auto;
+    margin-top: 2%;
+}
+.sec-place-1 {
+    /* background: red; */
+    width: fit-content;
+    margin: auto;
+    font-size: 25px;
+    font-family: math;
+    color: #323232;
+    line-height: 2;
+}
+.sec-place-2 {
+    /* background: blueviolet; */
+    width: 23%;
+    text-align: center;
+    margin: auto;
+    font-family: system-ui;
+    font-size: 13px;
+}
+
+/* ========== slider-2-rooms ========== */
+
+.all-sec-place {
+    width: 90%;
+    height: auto;
+    /* background: yellowgreen; */
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sec-place-slider {
+    width: 100%;
+    height: auto;
+    /* background: #544941; */
+}
+.place-cnct-all-sec {
+    background: #f5f5f591;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -4px;
+}
+
+.main-sec-ftr {
+    width: 100%;
+    height: 290px;
+    /* background-color: yellowgreen; */
+    margin-top: 2%;
+}
+
+/* <==================================> rooms End <==================================>*/
+
+
+/* <==================================> facilities start <==================================>*/
+
+.facilities-head {
+    width: 100%;
+    height: auto;
+    /* background: red; */
+    padding: 40px;
+}
+.fclity-main-cnct {
+    color: #F4694C;
+    width: fit-content;
+    /* background: green; */
+    margin: auto;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 40px;
+}
+.fclty-pera-1 {
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 86%;
+    margin: auto;
+    letter-spacing: 2px;
+    color: gray;
+    margin-top: 1%;
+}
+
+.image-1st-click {
+    height: 650px;
+    width: 86%;
+    background: url(img-fclty-1.png);
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 3%;
+    position: relative;
+}
+
+.image-1st-click::before {
+    height: 650px;
+    width: 100%;
+    content: " ";
+    position: absolute;
+    background-color: #14274a59;
+}
+
+.swimming-1-btn {
+    background: #F4694C;
+    width: fit-content;
+    padding: 12px;
+    position: absolute;
+    top: 97%;
+    left: 43%;
+}
+.swimming-1-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.swimming-2-btn {
+    background: #F4694C;
+    width: fit-content;
+    padding: 12px;
+    position: absolute;
+    top: 97%;
+    left: 45%;
+}
+.swimming-2-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.swimming-3-btn {
+    background: #F4694C;
+    width: fit-content;
+    padding: 12px;
+    position: absolute;
+    top: 97%;
+    left: 46%;
+}
+.swimming-3-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* ========== image-2 ==========  */
+
+.image-2st-click {
+    height: 650px;
+    width: 86%;
+    background: url(image-cnct-2.png);
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 3%;
+    position: relative;
+}
+.image-2st-click::before {
+    height: 650px;
+    width: 100%;
+    content: " ";
+    position: absolute;
+    background-color: #14274a59;
+}
+
+/* ========== image-3 ==========  */
+
+.image-3st-click {
+    height: 650px;
+    width: 86%;
+    background: url(the-spa-image111.jpg);
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 3%;
+    position: relative;
+}
+.image-3st-click::before {
+    height: 650px;
+    width: 100%;
+    content: " ";
+    position: absolute;
+    background-color: #14274a59;
+}
+
+/* <==================================> facilities end <==================================>*/
+
+/* <==================================> contect Us Page start <==================================>*/
+
+.maps-embed {
+    width: 100%;
+    height: 460px;
+    background: url(Map.png);
+    background-size: contain;
+    position: relative;
+}
+
+.map-flx {
+    height: 172px;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-link {
+    position: absolute;
+    width: 20%;
+    height: 172px;
+    background: #ffffffd4;
+    border-radius: 8px;
+    top: 25%;
+    left: 20.3%;
+}
+.map-link a {
+    text-decoration: none;
+}
+.map-logos {
+    width: 40px;
+    height: 40px;
+    background: url(map-marker-alt.png);
+    background-size: contain;
+}
+.beach {
+    /* background: pink; */
+    color: #333535;
+    width: fit-content;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.beach-2 {
+    color: #656565;
+    font-weight: 640;
+    font-size: 13px;
+    font-family: system-ui;
+    margin-top: 5%;
+}
+
+/* ========== contect form start ===========  */
+
+.main-contect-form {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.f-cnct {
+    width: 80%;
+    height: auto;
+    /* background: blueviolet; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-c {
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 700;
+    /* background: red; */
+    width: 100%;
+}
+
+.map-imgs {
+    display: flex;
+    /* background-color: pink; */
+    align-items: center;
+    width: 100%;
+    margin-top: 6%;
+}
+
+.add {
+    /* background: aqua; */
+    width: 80%;
+    margin-top: 3%;
+}
+.one-g {
+    width: 55px;
+    height: 55px;
+}
+.m-c-a {
+    /* background: green; */
+    width: fit-content;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-left: 3%;
+}
+.contect-form-flex {
+    width: 35%;
+    /* background: aquamarine; */
+}
+
+.contect-form-flex-1 {
+    width: 50%;
+    height: 445px;
+    /* background: red; */
+    text-align: center;
+}
+
+.f-l-name {
+    /* background-color: burlywood; */
+    margin: auto;
+    margin-top: 7%;
+    width: fit-content;
+}
+.f-l-name input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 3%;
+    background: #f2f0f0;
+}
+.f-l-name input::placeholder {
+    color: rgb(98, 92, 92);
+}
+
+.ename {
+    width: 404px;
+    padding: 8px;
+    margin-top: 3%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-style: italic;
+    font-weight: 600;
+    padding-left: 3%;
+    background: #f2f0f0;
+}
+.ename::placeholder {
+    color: rgb(98, 92, 92);
+}
+
+.msg {
+    width: 404px;
+    padding: 8px;
+    margin-top: 3%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-style: italic;
+    font-weight: 600;
+    padding-left: 3%;
+    background: #f2f0f0;
+}
+.msg::placeholder {
+    color: rgb(98, 92, 92);
+}
+.snd-msg {
+    width: 404px;
+    height: 160px;
+    padding: 8px;
+    margin-top: 3%;
+    border: none;
+    outline: none;
+    border-radius: 6px; 
+    font-style: italic;
+    font-weight: 600;
+    padding-left: 3%;
+    background: #f2f0f0;
+}
+.snd-msg::placeholder {
+    color: rgb(98, 92, 92);
+}
+.s-btn {
+    color: #F4694C;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 3%;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 50%;
+    background: 
+    linear-gradient(#F4694C 0 0) no-repeat
+    var(--p, 200%) 100% / 200% var(--p, .08em);
+  transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+  border: 1px solid #F4694C;
+}   
+.s-btn:hover {
+    --p: 100%;
+  --t: .3s;
+  color: white;
+}
+
+/* ========== contect form end ===========  */
+
+
+/* <==================================> contect Us Page End <==================================>*/
+
